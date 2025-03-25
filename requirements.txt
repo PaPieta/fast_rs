@@ -1,0 +1,4 @@
+localthickness
+numpy
+scipy
+scikit-image
