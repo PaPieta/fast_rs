@@ -1,5 +1,8 @@
+from typing import Union
+
 import numpy as np
 import numpy.typing as npt
+
 
 from scipy.ndimage import labeled_comprehension
 from skimage.measure import label
@@ -46,7 +49,7 @@ def roundness(
     mask: npt.NDArray[bool],
     label_img: npt.NDArray[int],
     lt_scale: float = 0.5,
-    thickness: None | npt.NDArray[float] = None,
+    thickness: Union[None,npt.NDArray[float]] = None,
 ) -> npt.NDArray[float]:
     """Calculate the roundness of objects in a 2D or 3D binary mask. Approximates corner curvature using mask edge local thickness values.
     Arguments:
@@ -107,7 +110,7 @@ def sphericity(
     mask: npt.NDArray[bool],
     label_img: npt.NDArray[int],
     lt_scale: float = 0.5,
-    thickness: None | npt.NDArray[float] = None,
+    thickness: Union[None, npt.NDArray[float]] = None,
 ) -> npt.NDArray[float]:
     """Calculate the sphericity of objects in a 2D or 3D binary mask. Approximates object shape as ellipse in 2D and spheroid in 3D.
     Arguments:
