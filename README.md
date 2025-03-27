@@ -6,7 +6,7 @@ The method uses the output from local thickness algorithm to approximate the two
 
 The execution speed is dependent primarily on image volume, and not on number of objects, enabling fast evaluation of thousands of objects at once.
 
-**For in-depth introduction to the library, visit the [CodeOcean capsule](TODO)**
+**For in-depth introduction to the library, visit the [CodeOcean capsule](https://codeocean.com/capsule/9246661/tree/v1).**
 
 ## Installation
 
@@ -24,7 +24,7 @@ Library requires ```numpy```, ```scipy```, ```scikit-image```, ```localthickness
 
 ## How to use
 
->For in-depth introduction, visit the [CodeOcean capsule](https://codeocean.com/capsule/0576373/tree/v2).
+>For in-depth introduction, visit the [CodeOcean capsule](https://codeocean.com/capsule/9246661/tree/v1).
 
 Both sphericity and roundness can be calculated together, from a binary mask. The process is exactly the same in 2D and 3D.
 
