@@ -51,4 +51,4 @@ TBA
 
 ## License
 
-MIT License (see LICENSE file), excluding external code (see wadell_rs/external for license details in each file).
+MIT License (see LICENSE file).
