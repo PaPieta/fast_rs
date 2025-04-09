@@ -1,6 +1,6 @@
 # Fast sphericity and roundness approximation in 2D and 3D 
 
-Fast approximation of Wadell sphericity and roundness in 2D and 3D, described in our paper [arXiv link](https://arxiv.org/abs/2504.05808)
+Fast approximation of Wadell sphericity and roundness in 2D and 3D, described in our paper [(arXiv link)](https://arxiv.org/abs/2504.05808).
 
 The method uses the output from local thickness algorithm to approximate the two measures. Resulting sphericity values closely match those from exact approaches. Roundness values no longer retain the original 0-1 range, but correlate closely to it.
 
