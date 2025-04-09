@@ -43,10 +43,20 @@ Returned label image indices can be used to connect measure values to specific o
 
 ## Paper
 
-The fast sphericity and roundness approximation method is described and evaluated in our contribution to (TBA). Please cite our paper if you use the method in your work.
+The fast sphericity and roundness approximation method is described and evaluated in our contribution to CVMI (CVPR 2025 Workshop). Please cite our paper if you use the method in your work.
+
+> TBA: Official publication link
 
 ```
-TBA
+@article{pieta2025,
+      title={Fast Sphericity and Roundness approximation in 2D and 3D using Local Thickness}, 
+      author={Pawel Tomasz Pieta and Peter Winkel Rasumssen and Anders Bjorholm Dahl and Anders Nymark Christensen},
+      year={2025},
+      eprint={2504.05808},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.05808}, 
+}
 ```
 
 ## License
