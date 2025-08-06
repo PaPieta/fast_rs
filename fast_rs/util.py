@@ -5,8 +5,8 @@ import numpy.typing as npt
 
 
 def ellipse_perimeter(
-    sm_axis_r: Union[float, npt.NDArray[float]], area: Union[float, npt.NDArray[float]]
-) -> Union[float, npt.NDArray[float]]:
+    sm_axis_r: Union[float, npt.NDArray[np.float64]], area: Union[float, npt.NDArray[np.float64]]
+) -> Union[float, npt.NDArray[np.float64]]:
     """Calculate the perimeter of ellipse from area and semi-minor axis radius, using the first Ramanujan approximation. Works also on arrays of ellipses.
     Arguments:
         sm_axis_r: float | npt.NDArray[float]
@@ -26,8 +26,8 @@ def ellipse_perimeter(
 
 
 def spheroid_surface_area(
-    rad_a: npt.NDArray[float], volumes: npt.NDArray[float]
-) -> npt.NDArray[float]:
+    rad_a: npt.NDArray[np.float64], volumes: npt.NDArray[np.float64]
+) -> npt.NDArray[np.float64]:
     """Calculate the surface area of spheroids from the equatorial radus and volume. Works on arrays of spheroids.
     Arguments:
         rad_a: npt.NDArray[float]
@@ -50,8 +50,8 @@ def spheroid_surface_area(
     return surface_area
 
 def oblate_sa(
-    rad_a: Union[float, npt.NDArray[float]], c_dist: Union[float, npt.NDArray[float]]
-) -> Union[float, npt.NDArray[float]]:
+    rad_a: Union[float, npt.NDArray[np.float64]], c_dist: Union[float, npt.NDArray[np.float64]]
+) -> Union[float, npt.NDArray[np.float64]]:
     """Calculate surface area of a oblate spheroid from semi axes size.
     Arguments:
         rad_a: float | npt.NDArray[float]
@@ -76,8 +76,8 @@ def oblate_sa(
 
 
 def prolate_sa(
-    rad_a: Union[float, npt.NDArray[float]], c_dist: Union[float, npt.NDArray[float]]
-) -> Union[float, npt.NDArray[float]]:
+    rad_a: Union[float, npt.NDArray[np.float64]], c_dist: Union[float, npt.NDArray[np.float64]]
+) -> Union[float, npt.NDArray[np.float64]]:
     """Calculate surface area of a prolate spheroid from semi axes size.
     Arguments:
         rad_a: float | npt.NDArray[float]

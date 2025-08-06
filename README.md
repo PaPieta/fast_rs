@@ -10,16 +10,8 @@ The execution speed is dependent primarily on image volume, and not on number of
 
 ## Installation
 
-``` python
-pip install git+https://github.com/PaPieta/fast_rs.git
 ```
-
-## Prerequisites
-
-Library requires ```numpy```, ```scipy```, ```scikit-image```, ```localthickness```. They can be installed via provided requirements file:
-
-```sh
-  pip install -r requirements.txt
+pip install fast_rs
 ```
 
 ## How to use
@@ -32,7 +24,7 @@ Both sphericity and roundness can be calculated together, from a binary mask. Th
 from fast_rs import rs
 
 mask = ... # Load/provide binary mask (can be both a 2D and 3D np.array)
-roundness_vec, sphericity_vec, label_img = rs.rs_calulate(mask)
+roundness_vec, sphericity_vec, label_img = rs.rs_calculate(mask)
 ```
 
 Returned label image indices can be used to connect measure values to specific objects in the mask.

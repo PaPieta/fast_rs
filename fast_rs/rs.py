@@ -11,7 +11,7 @@ import localthickness as lt
 from . import util
 
 
-def rs_calulate(mask: npt.NDArray[bool], lt_scale: float = 0.5) -> npt.NDArray[float]:
+def rs_calculate(mask: npt.NDArray[np.bool_], lt_scale: float = 0.5) -> npt.NDArray[np.float64]:
     """Calculate the roundness and sphericity of objects in a 2D or 3D binary mask using the local thickness-based approximations.
     Arguments:
         mask: npt.NDArray[float]
@@ -46,11 +46,11 @@ def rs_calulate(mask: npt.NDArray[bool], lt_scale: float = 0.5) -> npt.NDArray[f
 
 
 def roundness(
-    mask: npt.NDArray[bool],
-    label_img: npt.NDArray[int],
+    mask: npt.NDArray[np.bool_],
+    label_img: npt.NDArray[np.int_],
     lt_scale: float = 0.5,
-    thickness: Union[None,npt.NDArray[float]] = None,
-) -> npt.NDArray[float]:
+    thickness: Union[None,npt.NDArray[np.float64]] = None,
+) -> npt.NDArray[np.float64]:
     """Calculate the roundness of objects in a 2D or 3D binary mask. Approximates corner curvature using mask edge local thickness values.
     Arguments:
         mask: npt.NDArray[float]
@@ -107,11 +107,11 @@ def roundness(
 
 
 def sphericity(
-    mask: npt.NDArray[bool],
-    label_img: npt.NDArray[int],
+    mask: npt.NDArray[np.bool_],
+    label_img: npt.NDArray[np.int_],
     lt_scale: float = 0.5,
-    thickness: Union[None, npt.NDArray[float]] = None,
-) -> npt.NDArray[float]:
+    thickness: Union[None, npt.NDArray[np.float64]] = None,
+) -> npt.NDArray[np.float64]:
     """Calculate the sphericity of objects in a 2D or 3D binary mask. Approximates object shape as ellipse in 2D and spheroid in 3D.
     Arguments:
         mask: npt.NDArray[float]
