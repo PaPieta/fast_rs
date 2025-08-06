@@ -6,7 +6,7 @@ The method uses the output from local thickness algorithm to approximate the two
 
 The execution speed is dependent primarily on image volume, and not on number of objects, enabling fast evaluation of thousands of objects at once.
 
-**For in-depth introduction to the library, visit the [CodeOcean capsule](https://codeocean.com/capsule/9246661/tree/v1).**
+**For in-depth introduction to the library, visit the [CodeOcean capsule](https://codeocean.com/capsule/9246661/).**
 
 ## Installation
 
@@ -16,7 +16,7 @@ pip install fast_rs
 
 ## How to use
 
->For in-depth introduction, visit the [CodeOcean capsule](https://codeocean.com/capsule/9246661/tree/v1).
+>For in-depth introduction, visit the [CodeOcean capsule](https://codeocean.com/capsule/9246661/).
 
 Both sphericity and roundness can be calculated together, from a binary mask. The process is exactly the same in 2D and 3D.
 
@@ -31,7 +31,7 @@ Returned label image indices can be used to connect measure values to specific o
 
 **Example result:**
 
-<img src="doc_img\demo_img.png" alt="drawing" width="500"/>
+<img src="doc_img\demo_img.png" alt="Demo result of roundness and sphericity" width="500"/>
 
 ## Paper
 
